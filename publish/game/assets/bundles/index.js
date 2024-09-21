@@ -1,0 +1,24 @@
+System.register("chunks:///_virtual/bundles",["./GameMainView.ts","./GameMainView2.ts"],(function(){return{setters:[null,null],execute:function(){}}}));
+
+System.register("chunks:///_virtual/GameMainView.ts",["./rollupPluginModLoBabelHelpers.js","cc","./UIView.ts","./Lodash.ts","./UIConfig.ts"],(function(n){var t,e,o,i,l,c,u;return{setters:[function(n){t=n.inheritsLoose},function(n){e=n.cclegacy,o=n._decorator,i=n.Button},function(n){l=n.UIView},function(n){c=n.Lodash},function(n){u=n.UIType}],execute:function(){var a;e._RF.push({},"83eb33ce0RPz5RiAGfOm3k4","GameMainView",void 0);var s=o.ccclass;o.property,n("JzpyqGameMainView",s("JzpyqGameMainView")(a=function(n){function e(){for(var t,e=arguments.length,o=new Array(e),i=0;i<e;i++)o[i]=arguments[i];return(t=n.call.apply(n,[this].concat(o))||this).logo=null,t.jyb=null,t.zaozi=null,t.btn_jybzz=null,t.btn_naoli=null,t.btn_zzjl=null,t.btn_zzjl_disabled=null,t.btn_rank=null,t.btn_invite=null,t.btn_feedback=null,t.btn_pyhsic=null,t.btn_set=null,t.btn_clear=null,t.btn_back=null,t.bZzjlUnLock=!1,t.testMap=new Map,t}t(e,n);var o=e.prototype;return o.initView=function(){n.prototype.initView.call(this),this.btn_back=c.seekNodeByName(this.node,"btn_back"),Log.d("uuuuuuuuuuuuuuu==>")},o.bTriggerGuide=function(){return 1==AppF.saveData.passStage},o.addEventListener=function(){n.prototype.addEventListener.call(this),this.btn_back.on(i.EventType.CLICK,this.onClose,this)},o.removeEventListener=function(){n.prototype.removeEventListener.call(this),this.btn_back.off(i.EventType.CLICK,this.onClose,this)},o.onClose=function(){AppF.uiMgr.closeView(u.JzpyqGameMain)},o.onBtnJyb=function(){},o.onBtnNaoLi=function(){},o.onBtnZzJL=function(){0!=this.bZzjlUnLock||AppF.tips.show(AppF.i18nMgr.getString("text_zzjl_unlock"))},o.onBtnRank=function(){Log.d("排行榜.......")},o.onBtnInvite=function(){Log.d("邀请好友.......")},o.onBtnFeedBack=function(){Log.d("反馈.......")},o.onBtnPhysic=function(){Log.d("添加体力.......")},o.onBtnSet=function(){Log.d("设置.......")},o.onBtnClear=function(){AppF.localStorage.clear()},o.onBtnEnabled=function(n){},o.show=function(){n.prototype.show.call(this),this.checkZzjlUnLock()},o.checkZzjlUnLock=function(){},o.clear=function(){n.prototype.clear.call(this)},e}(l))||a);e._RF.pop()}}}));
+
+System.register("chunks:///_virtual/GameMainView2.ts",["./rollupPluginModLoBabelHelpers.js","cc","./UIView.ts","./Lodash.ts","./UIConfig.ts"],(function(n){var t,e,o,i,l,c,a;return{setters:[function(n){t=n.inheritsLoose},function(n){e=n.cclegacy,o=n._decorator,i=n.Button},function(n){l=n.UIView},function(n){c=n.Lodash},function(n){a=n.UIType}],execute:function(){var s;e._RF.push({},"fc707uh2b9Cj5c0hbEye4Mr","GameMainView",void 0);var u=o.ccclass;o.property,n("GameMainView",u("GameMainView")(s=function(n){function e(){for(var t,e=arguments.length,o=new Array(e),i=0;i<e;i++)o[i]=arguments[i];return(t=n.call.apply(n,[this].concat(o))||this).logo=null,t.jyb=null,t.zaozi=null,t.btn_jybzz=null,t.btn_naoli=null,t.btn_zzjl=null,t.btn_zzjl_disabled=null,t.btn_rank=null,t.btn_invite=null,t.btn_feedback=null,t.btn_pyhsic=null,t.btn_set=null,t.btn_clear=null,t.btn_back=null,t.bZzjlUnLock=!1,t.testMap=new Map,t}t(e,n);var o=e.prototype;return o.initView=function(){n.prototype.initView.call(this),this.btn_back=c.seekNodeByName(this.node,"btn_back")},o.bTriggerGuide=function(){return 1==AppF.saveData.passStage},o.addEventListener=function(){n.prototype.addEventListener.call(this),this.btn_back.on(i.EventType.CLICK,this.onClose,this)},o.removeEventListener=function(){n.prototype.removeEventListener.call(this),this.btn_back.off(i.EventType.CLICK,this.onClose,this)},o.onClose=function(){AppF.uiMgr.closeView(a.JzpyqGameMain)},o.onBtnJyb=function(){},o.onBtnNaoLi=function(){},o.onBtnZzJL=function(){0!=this.bZzjlUnLock||AppF.tips.show(AppF.i18nMgr.getString("text_zzjl_unlock"))},o.onBtnRank=function(){Log.d("排行榜.......")},o.onBtnInvite=function(){Log.d("邀请好友.......")},o.onBtnFeedBack=function(){Log.d("反馈.......")},o.onBtnPhysic=function(){Log.d("添加体力.......")},o.onBtnSet=function(){Log.d("设置.......")},o.onBtnClear=function(){AppF.localStorage.clear()},o.onBtnEnabled=function(n){},o.show=function(){n.prototype.show.call(this),this.checkZzjlUnLock()},o.checkZzjlUnLock=function(){},o.clear=function(){n.prototype.clear.call(this)},e}(l))||s);e._RF.pop()}}}));
+
+(function(r) {
+  r('virtual:///prerequisite-imports/bundles', 'chunks:///_virtual/bundles'); 
+})(function(mid, cid) {
+    System.register(mid, [cid], function (_export, _context) {
+    return {
+        setters: [function(_m) {
+            var _exportObj = {};
+
+            for (var _key in _m) {
+              if (_key !== "default" && _key !== "__esModule") _exportObj[_key] = _m[_key];
+            }
+      
+            _export(_exportObj);
+        }],
+        execute: function () { }
+    };
+    });
+});
